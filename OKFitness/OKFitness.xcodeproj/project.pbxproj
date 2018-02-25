@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C346A5EF203AC26B008625C8 /* CustomTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = C346A5EE203AC26B008625C8 /* CustomTextField.xib */; };
+		C346A6192042CEC7008625C8 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C346A6182042CEC7008625C8 /* Login.storyboard */; };
 		C38449E62029F540006E7DEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38449E52029F540006E7DEC /* AppDelegate.swift */; };
 		C38449E82029F540006E7DEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38449E72029F540006E7DEC /* ViewController.swift */; };
 		C38449EB2029F540006E7DEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38449E92029F540006E7DEC /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C346A5EE203AC26B008625C8 /* CustomTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTextField.xib; sourceTree = "<group>"; };
+		C346A6182042CEC7008625C8 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		C38449E22029F540006E7DEC /* OKFitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OKFitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38449E52029F540006E7DEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C38449E72029F540006E7DEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +180,9 @@
 		C3844A192029F597006E7DEC /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				C38449E92029F540006E7DEC /* Main.storyboard */,
+				C346A6182042CEC7008625C8 /* Login.storyboard */,
+				C38449EE2029F540006E7DEC /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -183,8 +190,7 @@
 		C3844A1A2029F59D006E7DEC /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
-				C38449E92029F540006E7DEC /* Main.storyboard */,
-				C38449EE2029F540006E7DEC /* LaunchScreen.storyboard */,
+				C346A5EE203AC26B008625C8 /* CustomTextField.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -296,8 +302,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C346A5EF203AC26B008625C8 /* CustomTextField.xib in Resources */,
 				C38449F02029F540006E7DEC /* LaunchScreen.storyboard in Resources */,
 				C38449ED2029F540006E7DEC /* Assets.xcassets in Resources */,
+				C346A6192042CEC7008625C8 /* Login.storyboard in Resources */,
 				C38449EB2029F540006E7DEC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
