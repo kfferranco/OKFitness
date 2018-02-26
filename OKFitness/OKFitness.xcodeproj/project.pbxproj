@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C346A5EF203AC26B008625C8 /* CustomTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = C346A5EE203AC26B008625C8 /* CustomTextField.xib */; };
+		0504D8FDFD86F0E97F6F5049 /* Pods_App_OKFitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B2B77B014F679AD3F4281EA /* Pods_App_OKFitness.framework */; };
 		C346A6192042CEC7008625C8 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C346A6182042CEC7008625C8 /* Login.storyboard */; };
+		C346A61C2042DF24008625C8 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C346A61A2042DF24008625C8 /* Home.storyboard */; };
+		C346A61E2042F1C5008625C8 /* TextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C346A61D2042F1C5008625C8 /* TextFieldView.xib */; };
+		C346A6202042F280008625C8 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C346A61F2042F280008625C8 /* Color+Extensions.swift */; };
+		C346A6222042F33C008625C8 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C346A6212042F33C008625C8 /* TextFieldView.swift */; };
+		C346A6242042F39B008625C8 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C346A6232042F39B008625C8 /* TextField.swift */; };
+		C346A6282042F571008625C8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C346A6272042F571008625C8 /* LoginViewController.swift */; };
+		C346A62A2043062F008625C8 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C346A6292043062F008625C8 /* GradientView.swift */; };
+		C346A62C20430A5F008625C8 /* GradientButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C346A62B20430A5F008625C8 /* GradientButtonView.swift */; };
 		C38449E62029F540006E7DEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38449E52029F540006E7DEC /* AppDelegate.swift */; };
-		C38449E82029F540006E7DEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38449E72029F540006E7DEC /* ViewController.swift */; };
 		C38449EB2029F540006E7DEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38449E92029F540006E7DEC /* Main.storyboard */; };
 		C38449ED2029F540006E7DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38449EC2029F540006E7DEC /* Assets.xcassets */; };
 		C38449F02029F540006E7DEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38449EE2029F540006E7DEC /* LaunchScreen.storyboard */; };
@@ -36,11 +43,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C346A5EE203AC26B008625C8 /* CustomTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTextField.xib; sourceTree = "<group>"; };
+		6CB69833E838A367775ED70D /* Pods-App-OKFitness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-OKFitness.release.xcconfig"; path = "Pods/Target Support Files/Pods-App-OKFitness/Pods-App-OKFitness.release.xcconfig"; sourceTree = "<group>"; };
+		8B2B77B014F679AD3F4281EA /* Pods_App_OKFitness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_OKFitness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C346A6182042CEC7008625C8 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		C346A61B2042DF24008625C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		C346A61D2042F1C5008625C8 /* TextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldView.xib; sourceTree = "<group>"; };
+		C346A61F2042F280008625C8 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		C346A6212042F33C008625C8 /* TextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		C346A6232042F39B008625C8 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		C346A6272042F571008625C8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C346A6292043062F008625C8 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		C346A62B20430A5F008625C8 /* GradientButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonView.swift; sourceTree = "<group>"; };
 		C38449E22029F540006E7DEC /* OKFitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OKFitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38449E52029F540006E7DEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C38449E72029F540006E7DEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C38449EA2029F540006E7DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C38449EC2029F540006E7DEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C38449EF2029F540006E7DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +66,7 @@
 		C3844A012029F540006E7DEC /* OKFitnessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OKFitnessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3844A052029F540006E7DEC /* OKFitnessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKFitnessUITests.swift; sourceTree = "<group>"; };
 		C3844A072029F540006E7DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCD92A0A406C34C015440FDA /* Pods-App-OKFitness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-OKFitness.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App-OKFitness/Pods-App-OKFitness.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0504D8FDFD86F0E97F6F5049 /* Pods_App_OKFitness.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +95,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33AD61CB1B5E7A6206D7DC2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B2B77B014F679AD3F4281EA /* Pods_App_OKFitness.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5525D520301967CFF1939557 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCD92A0A406C34C015440FDA /* Pods-App-OKFitness.debug.xcconfig */,
+				6CB69833E838A367775ED70D /* Pods-App-OKFitness.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C38449D92029F540006E7DEC = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +119,8 @@
 				C38449F92029F540006E7DEC /* OKFitnessTests */,
 				C3844A042029F540006E7DEC /* OKFitnessUITests */,
 				C38449E32029F540006E7DEC /* Products */,
+				5525D520301967CFF1939557 /* Pods */,
+				33AD61CB1B5E7A6206D7DC2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,7 +168,7 @@
 		C3844A132029F56A006E7DEC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C38449E72029F540006E7DEC /* ViewController.swift */,
+				C346A6272042F571008625C8 /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -140,6 +176,10 @@
 		C3844A142029F570006E7DEC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C346A6232042F39B008625C8 /* TextField.swift */,
+				C346A6212042F33C008625C8 /* TextFieldView.swift */,
+				C346A6292043062F008625C8 /* GradientView.swift */,
+				C346A62B20430A5F008625C8 /* GradientButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -155,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				C38449EC2029F540006E7DEC /* Assets.xcassets */,
+				C346A61F2042F280008625C8 /* Color+Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -183,6 +224,7 @@
 				C38449E92029F540006E7DEC /* Main.storyboard */,
 				C346A6182042CEC7008625C8 /* Login.storyboard */,
 				C38449EE2029F540006E7DEC /* LaunchScreen.storyboard */,
+				C346A61A2042DF24008625C8 /* Home.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -190,7 +232,7 @@
 		C3844A1A2029F59D006E7DEC /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
-				C346A5EE203AC26B008625C8 /* CustomTextField.xib */,
+				C346A61D2042F1C5008625C8 /* TextFieldView.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -202,9 +244,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3844A0A2029F540006E7DEC /* Build configuration list for PBXNativeTarget "OKFitness" */;
 			buildPhases = (
+				02AB0B9CE89FC89B97FFD2DF /* [CP] Check Pods Manifest.lock */,
 				C38449DE2029F540006E7DEC /* Sources */,
 				C38449DF2029F540006E7DEC /* Frameworks */,
 				C38449E02029F540006E7DEC /* Resources */,
+				97CD987EBEA00BD579AB6F46 /* [CP] Embed Pods Frameworks */,
+				4505EC444F7D736FEEEE3321 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -302,9 +347,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C346A5EF203AC26B008625C8 /* CustomTextField.xib in Resources */,
 				C38449F02029F540006E7DEC /* LaunchScreen.storyboard in Resources */,
 				C38449ED2029F540006E7DEC /* Assets.xcassets in Resources */,
+				C346A61C2042DF24008625C8 /* Home.storyboard in Resources */,
+				C346A61E2042F1C5008625C8 /* TextFieldView.xib in Resources */,
 				C346A6192042CEC7008625C8 /* Login.storyboard in Resources */,
 				C38449EB2029F540006E7DEC /* Main.storyboard in Resources */,
 			);
@@ -326,13 +372,104 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02AB0B9CE89FC89B97FFD2DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-App-OKFitness-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4505EC444F7D736FEEEE3321 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App-OKFitness/Pods-App-OKFitness-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97CD987EBEA00BD579AB6F46 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-App-OKFitness/Pods-App-OKFitness-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/DrawerController/DrawerController.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Locksmith/Locksmith.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DrawerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Locksmith.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App-OKFitness/Pods-App-OKFitness-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C38449DE2029F540006E7DEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C38449E82029F540006E7DEC /* ViewController.swift in Sources */,
 				C38449E62029F540006E7DEC /* AppDelegate.swift in Sources */,
+				C346A6222042F33C008625C8 /* TextFieldView.swift in Sources */,
+				C346A62A2043062F008625C8 /* GradientView.swift in Sources */,
+				C346A6242042F39B008625C8 /* TextField.swift in Sources */,
+				C346A6282042F571008625C8 /* LoginViewController.swift in Sources */,
+				C346A6202042F280008625C8 /* Color+Extensions.swift in Sources */,
+				C346A62C20430A5F008625C8 /* GradientButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +505,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		C346A61A2042DF24008625C8 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C346A61B2042DF24008625C8 /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
 		C38449E92029F540006E7DEC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -496,11 +641,12 @@
 		};
 		C3844A0B2029F540006E7DEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCD92A0A406C34C015440FDA /* Pods-App-OKFitness.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = OKFitness/Info.plist;
+				INFOPLIST_FILE = OKFitness/app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.okfitness.OKFitness;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -512,11 +658,12 @@
 		};
 		C3844A0C2029F540006E7DEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CB69833E838A367775ED70D /* Pods-App-OKFitness.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = OKFitness/Info.plist;
+				INFOPLIST_FILE = OKFitness/app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.okfitness.OKFitness;
 				PRODUCT_NAME = "$(TARGET_NAME)";

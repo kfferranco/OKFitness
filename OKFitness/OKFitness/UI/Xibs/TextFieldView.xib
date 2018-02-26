@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Heavy</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextFieldView" customModule="OKFitness" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="WJ8-dA-9hT" id="h4I-ST-7on"/>
+                <outlet property="textField" destination="kfX-da-4Hk" id="q4y-X4-8un"/>
+                <outlet property="view" destination="iN0-l3-epB" id="1Bx-EC-Abj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kfX-da-4Hk" customClass="TextField" customModule="OKFitness" customModuleProvider="target">
+                    <rect key="frame" x="89" y="0.0" width="286" height="89"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="11"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                </textField>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WJ8-dA-9hT">
+                    <rect key="frame" x="0.0" y="0.0" width="89" height="89"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="WJ8-dA-9hT" secondAttribute="height" multiplier="1:1" id="3DN-l4-3nJ"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YlM-Xj-UCx">
+                    <rect key="frame" x="0.0" y="88" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="BBS-WP-4uy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="kfX-da-4Hk" firstAttribute="leading" secondItem="WJ8-dA-9hT" secondAttribute="trailing" id="2df-pt-fPw"/>
+                <constraint firstItem="WJ8-dA-9hT" firstAttribute="height" secondItem="kfX-da-4Hk" secondAttribute="height" id="2vk-t8-X5j"/>
+                <constraint firstAttribute="bottom" secondItem="kfX-da-4Hk" secondAttribute="bottom" id="4Td-fe-3fm"/>
+                <constraint firstAttribute="trailing" secondItem="kfX-da-4Hk" secondAttribute="trailing" id="6jW-5b-wq0"/>
+                <constraint firstItem="YlM-Xj-UCx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Asw-eg-tJO"/>
+                <constraint firstAttribute="bottom" secondItem="YlM-Xj-UCx" secondAttribute="bottom" id="EWQ-fw-VIG"/>
+                <constraint firstItem="kfX-da-4Hk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QYb-VC-uEl"/>
+                <constraint firstItem="WJ8-dA-9hT" firstAttribute="centerY" secondItem="kfX-da-4Hk" secondAttribute="centerY" id="VfK-bg-mdl"/>
+                <constraint firstItem="WJ8-dA-9hT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bw0-Tf-6uJ"/>
+                <constraint firstAttribute="trailing" secondItem="YlM-Xj-UCx" secondAttribute="trailing" id="hUY-Ry-K3n"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="43.5" y="-206.5"/>
+        </view>
+    </objects>
+</document>
