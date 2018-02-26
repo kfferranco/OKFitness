@@ -139,6 +139,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FLs-b1-7ol"/>
                     </view>
+                    <connections>
+                        <outlet property="forgotPasswordButton" destination="sKk-rU-LYU" id="Mzb-m5-g5f"/>
+                        <outlet property="passwordTextField" destination="D2Z-YB-WV2" id="vrk-qA-RKc"/>
+                        <outlet property="signInButton" destination="qFk-Ii-9E9" id="a6b-BY-aud"/>
+                        <outlet property="signUpButton" destination="p2F-ci-EXa" id="W3n-iU-qjG"/>
+                        <outlet property="userNameTextField" destination="yOn-eH-Ojy" id="C8a-GK-sc0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eha-SF-IBb" sceneMemberID="firstResponder"/>
             </objects>
