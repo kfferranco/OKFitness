@@ -8,48 +8,10 @@
 
 import UIKit
 
-struct FitnessGoal {
-    let title: String
-    let image: String
-}
-
-enum Goals {
-    case StrengthAndConditioning
-    case BodyBuilding
-    case WeightLoss
-    case BodyWeightTraining
-    case FunctionalTraining
-    case Pilates
-    case Rehab
-    case PostRehab
-    
-    func fitnessValue() -> FitnessGoal {
-        switch self {
-        case .StrengthAndConditioning:
-            return FitnessGoal(title: "Strength and Conditioning", image: "strength")
-        case .BodyBuilding:
-            return FitnessGoal(title: "Body building", image: "bodyBuilding")
-        case .WeightLoss:
-            return FitnessGoal(title: "Weight Loss", image: "weightLoss")
-        case .BodyWeightTraining:
-            return FitnessGoal(title: "Body Weight Training", image: "bodyWeightTraining")
-        case .FunctionalTraining:
-            return FitnessGoal(title: "Functional Training", image: "group2")
-        case .Pilates:
-            return FitnessGoal(title: "Pilates", image: "pilates")
-        case .Rehab:
-            return FitnessGoal(title: "Rehab", image: "rehab")
-        case .PostRehab:
-            return FitnessGoal(title: "Post Rehab", image: "postRehab")
-        }
-    }
-}
-
 class GoalSelectionViewController: UIViewController {
     @IBOutlet weak var goalsCollectionView: UICollectionView!
     @IBOutlet weak var goalsCollectionViewHeightConstraint: NSLayoutConstraint!
-    
-    let goals: [Goals] = [Goals.StrengthAndConditioning, Goals.BodyBuilding, Goals.WeightLoss, Goals.BodyWeightTraining, Goals.FunctionalTraining, Goals.Pilates, Goals.Rehab, Goals.PostRehab]
+    let viewModel = GoalSelectionViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,7 +32,7 @@ class GoalSelectionViewController: UIViewController {
 
 extension GoalSelectionViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return goals.count
+        return viewModel.numberOfGoals()
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -78,8 +40,8 @@ extension GoalSelectionViewController: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         
-        let goal = goals[indexPath.item]
-        cell.bindWith(goal: goal.fitnessValue())
+        let goal = viewModel.goalAt(index: indexPath.item)
+        cell.bindWith(goal: goal)
         return cell
     }
 }

@@ -26,6 +26,8 @@
 		C346A62A2043062F008625C8 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C346A6292043062F008625C8 /* GradientView.swift */; };
 		C346A62C20430A5F008625C8 /* GradientButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C346A62B20430A5F008625C8 /* GradientButtonView.swift */; };
 		C3517F6B205FD5DC00D65D6C /* FitnessGoalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3517F6A205FD5DC00D65D6C /* FitnessGoalCollectionViewCell.swift */; };
+		C3517F6D205FEC5F00D65D6C /* GoalSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3517F6C205FEC5F00D65D6C /* GoalSelectionViewModel.swift */; };
+		C3517F70205FEC9500D65D6C /* FitnessGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3517F6F205FEC9500D65D6C /* FitnessGoal.swift */; };
 		C38449E62029F540006E7DEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38449E52029F540006E7DEC /* AppDelegate.swift */; };
 		C38449EB2029F540006E7DEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38449E92029F540006E7DEC /* Main.storyboard */; };
 		C38449ED2029F540006E7DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38449EC2029F540006E7DEC /* Assets.xcassets */; };
@@ -72,6 +74,8 @@
 		C346A6292043062F008625C8 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		C346A62B20430A5F008625C8 /* GradientButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonView.swift; sourceTree = "<group>"; };
 		C3517F6A205FD5DC00D65D6C /* FitnessGoalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessGoalCollectionViewCell.swift; sourceTree = "<group>"; };
+		C3517F6C205FEC5F00D65D6C /* GoalSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalSelectionViewModel.swift; sourceTree = "<group>"; };
+		C3517F6F205FEC9500D65D6C /* FitnessGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessGoal.swift; sourceTree = "<group>"; };
 		C38449E22029F540006E7DEC /* OKFitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OKFitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38449E52029F540006E7DEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C38449EA2029F540006E7DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -130,6 +134,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C3517F6E205FEC7A00D65D6C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3517F6F205FEC9500D65D6C /* FitnessGoal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C38449D92029F540006E7DEC = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +170,7 @@
 				C3844A172029F57F006E7DEC /* App */,
 				C3844A162029F57A006E7DEC /* Resources */,
 				C3844A182029F594006E7DEC /* UI */,
+				C3517F6E205FEC7A00D65D6C /* Models */,
 				C3844A152029F575006E7DEC /* ViewModels */,
 				C3844A142029F570006E7DEC /* Views */,
 				C3844A132029F56A006E7DEC /* ViewControllers */,
@@ -213,6 +226,7 @@
 		C3844A152029F575006E7DEC /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				C3517F6C205FEC5F00D65D6C /* GoalSelectionViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -493,6 +507,7 @@
 				C33715202056C4D700DFB1B5 /* WaiverViewController.swift in Sources */,
 				C337151C205696DB00DFB1B5 /* GoalSelectionViewController.swift in Sources */,
 				C38449E62029F540006E7DEC /* AppDelegate.swift in Sources */,
+				C3517F6D205FEC5F00D65D6C /* GoalSelectionViewModel.swift in Sources */,
 				C33715222056C7F200DFB1B5 /* ContractViewController.swift in Sources */,
 				C3517F6B205FD5DC00D65D6C /* FitnessGoalCollectionViewCell.swift in Sources */,
 				C334B2612043DF8D00E88D2D /* LoginNavigationController.swift in Sources */,
@@ -500,6 +515,7 @@
 				C337151A205696CA00DFB1B5 /* RegistrationViewController.swift in Sources */,
 				C334B25D2043DCB200E88D2D /* FormLayoutViewController.swift in Sources */,
 				C346A62A2043062F008625C8 /* GradientView.swift in Sources */,
+				C3517F70205FEC9500D65D6C /* FitnessGoal.swift in Sources */,
 				C334B25F2043DD1400E88D2D /* UIViewController+Extensions.swift in Sources */,
 				C33715242056C81C00DFB1B5 /* PARQViewController.swift in Sources */,
 				C346A6242042F39B008625C8 /* TextField.swift in Sources */,
