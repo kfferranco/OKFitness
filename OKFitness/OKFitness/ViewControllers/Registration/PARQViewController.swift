@@ -7,29 +7,18 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class PARQViewController: UIViewController {
-
+    @IBOutlet weak var backButton: UIBarButtonItem!
+    private let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        backButton.rx.tap.subscribe { [weak self] (_) in
+            guard let `self` = self else { return }
+            self.navigationController?.popViewController(animated: true)
+            }.disposed(by: disposeBag)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -7,10 +7,18 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class WaiverViewController: UIViewController {
-
+    @IBOutlet weak var backButton: UIBarButtonItem!
+    private let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        backButton.rx.tap.subscribe { [weak self] (_) in
+            guard let `self` = self else { return }
+            self.navigationController?.popViewController(animated: true)
+            }.disposed(by: disposeBag)
     }
 }

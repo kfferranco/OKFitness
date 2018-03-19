@@ -7,14 +7,23 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class GoalSelectionViewController: UIViewController {
+    @IBOutlet weak var backButton: UIBarButtonItem!
     @IBOutlet weak var goalsCollectionView: UICollectionView!
     @IBOutlet weak var goalsCollectionViewHeightConstraint: NSLayoutConstraint!
+    private let disposeBag = DisposeBag()
     let viewModel = GoalSelectionViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        backButton.rx.tap.subscribe { [weak self] (_) in
+            guard let `self` = self else { return }
+            self.navigationController?.popViewController(animated: true)
+        }.disposed(by: disposeBag)
+    
         goalsCollectionView.allowsMultipleSelection = true
 
         let layout = self.goalsCollectionView.collectionViewLayout as? UICollectionViewFlowLayout

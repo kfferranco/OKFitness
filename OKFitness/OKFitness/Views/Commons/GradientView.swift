@@ -11,6 +11,12 @@ import UIKit
 @IBDesignable
 
 public class GradientView: UIView {
+    @IBInspectable public var isHorizontal: Bool = true {
+        didSet {
+            setupGradient()
+        }
+    }
+    
     @IBInspectable public var startColor: UIColor? {
         didSet {
             setupGradient()
@@ -47,7 +53,14 @@ public class GradientView: UIView {
         let startColor = self.startColor ?? defaultColor
         let endColor = self.endColor ?? defaultColor
         gradientLayer.colors = [startColor.cgColor, endColor.cgColor]
-        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
-        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
+        if isHorizontal {
+            gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
+            gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
+        }
+        else {
+            gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0)
+            gradientLayer.endPoint = CGPoint(x: 0.5, y: 1.0)
+        }
+        
     }
 }
