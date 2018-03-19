@@ -8,26 +8,31 @@
 
 import UIKit
 
-class LoginNavigationController: UINavigationController {
+class LoginNavigationController: GradientNavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationBar.shadowImage = UIImage()
-        self.navigationBar.backgroundColor = UIColor.blue
-        self.view.backgroundColor = UIColor.white
         self.delegate = self
+    }
+    
+    func setBarHidden() {
+        self.navigationBar.isHidden = true
+        self.navigationBar.setBackgroundImage(UIImage(), for: .default)
+    }
+    
+    func setBarVisible() {
+        self.navigationBar.isHidden = false
+        navigationBar.setGradientBackground(colors: [UIColor.greenishTealTwo, UIColor.lightSage])
     }
 }
 
 extension LoginNavigationController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
         if viewController is LoginViewController {
-            self.navigationBar.isHidden = true
+            setBarHidden()
         }
         else {
-            self.navigationBar.isHidden = false
+            setBarVisible()
         }
     }
 }

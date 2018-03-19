@@ -28,6 +28,7 @@
 		C3517F6B205FD5DC00D65D6C /* FitnessGoalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3517F6A205FD5DC00D65D6C /* FitnessGoalCollectionViewCell.swift */; };
 		C3517F6D205FEC5F00D65D6C /* GoalSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3517F6C205FEC5F00D65D6C /* GoalSelectionViewModel.swift */; };
 		C3517F70205FEC9500D65D6C /* FitnessGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3517F6F205FEC9500D65D6C /* FitnessGoal.swift */; };
+		C3517F77205FEDD800D65D6C /* GradientNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3517F76205FEDD800D65D6C /* GradientNavigationController.swift */; };
 		C38449E62029F540006E7DEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38449E52029F540006E7DEC /* AppDelegate.swift */; };
 		C38449EB2029F540006E7DEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38449E92029F540006E7DEC /* Main.storyboard */; };
 		C38449ED2029F540006E7DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38449EC2029F540006E7DEC /* Assets.xcassets */; };
@@ -76,6 +77,7 @@
 		C3517F6A205FD5DC00D65D6C /* FitnessGoalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessGoalCollectionViewCell.swift; sourceTree = "<group>"; };
 		C3517F6C205FEC5F00D65D6C /* GoalSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalSelectionViewModel.swift; sourceTree = "<group>"; };
 		C3517F6F205FEC9500D65D6C /* FitnessGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessGoal.swift; sourceTree = "<group>"; };
+		C3517F76205FEDD800D65D6C /* GradientNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientNavigationController.swift; sourceTree = "<group>"; };
 		C38449E22029F540006E7DEC /* OKFitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OKFitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38449E52029F540006E7DEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C38449EA2029F540006E7DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -142,6 +144,56 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		C3517F71205FED8100D65D6C /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				C346A6232042F39B008625C8 /* TextField.swift */,
+				C346A6212042F33C008625C8 /* TextFieldView.swift */,
+				C346A6292043062F008625C8 /* GradientView.swift */,
+				C346A62B20430A5F008625C8 /* GradientButtonView.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		C3517F72205FED9100D65D6C /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				C334B25C2043DCB200E88D2D /* FormLayoutViewController.swift */,
+				C3517F76205FEDD800D65D6C /* GradientNavigationController.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		C3517F73205FED9600D65D6C /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				C346A6272042F571008625C8 /* LoginViewController.swift */,
+				C334B2602043DF8D00E88D2D /* LoginNavigationController.swift */,
+				C3371519205696CA00DFB1B5 /* RegistrationViewController.swift */,
+				C337151B205696DB00DFB1B5 /* GoalSelectionViewController.swift */,
+				C337151F2056C4D700DFB1B5 /* WaiverViewController.swift */,
+				C33715212056C7F200DFB1B5 /* ContractViewController.swift */,
+				C33715232056C81C00DFB1B5 /* PARQViewController.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		C3517F74205FEDA900D65D6C /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				C3517F6A205FD5DC00D65D6C /* FitnessGoalCollectionViewCell.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		C3517F75205FEDB800D65D6C /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				C3517F6C205FEC5F00D65D6C /* GoalSelectionViewModel.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
 		C38449D92029F540006E7DEC = {
 			isa = PBXGroup;
 			children = (
@@ -199,14 +251,8 @@
 		C3844A132029F56A006E7DEC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C334B25C2043DCB200E88D2D /* FormLayoutViewController.swift */,
-				C346A6272042F571008625C8 /* LoginViewController.swift */,
-				C334B2602043DF8D00E88D2D /* LoginNavigationController.swift */,
-				C3371519205696CA00DFB1B5 /* RegistrationViewController.swift */,
-				C337151B205696DB00DFB1B5 /* GoalSelectionViewController.swift */,
-				C337151F2056C4D700DFB1B5 /* WaiverViewController.swift */,
-				C33715212056C7F200DFB1B5 /* ContractViewController.swift */,
-				C33715232056C81C00DFB1B5 /* PARQViewController.swift */,
+				C3517F73205FED9600D65D6C /* Registration */,
+				C3517F72205FED9100D65D6C /* Commons */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -214,11 +260,8 @@
 		C3844A142029F570006E7DEC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C346A6232042F39B008625C8 /* TextField.swift */,
-				C346A6212042F33C008625C8 /* TextFieldView.swift */,
-				C346A6292043062F008625C8 /* GradientView.swift */,
-				C346A62B20430A5F008625C8 /* GradientButtonView.swift */,
-				C3517F6A205FD5DC00D65D6C /* FitnessGoalCollectionViewCell.swift */,
+				C3517F74205FEDA900D65D6C /* Registration */,
+				C3517F71205FED8100D65D6C /* Commons */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -226,7 +269,7 @@
 		C3844A152029F575006E7DEC /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				C3517F6C205FEC5F00D65D6C /* GoalSelectionViewModel.swift */,
+				C3517F75205FEDB800D65D6C /* Registration */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -520,6 +563,7 @@
 				C33715242056C81C00DFB1B5 /* PARQViewController.swift in Sources */,
 				C346A6242042F39B008625C8 /* TextField.swift in Sources */,
 				C346A6282042F571008625C8 /* LoginViewController.swift in Sources */,
+				C3517F77205FEDD800D65D6C /* GradientNavigationController.swift in Sources */,
 				C346A6202042F280008625C8 /* Color+Extensions.swift in Sources */,
 				C346A62C20430A5F008625C8 /* GradientButtonView.swift in Sources */,
 			);
