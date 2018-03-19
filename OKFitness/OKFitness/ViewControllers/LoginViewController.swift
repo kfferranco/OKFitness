@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class LoginViewController: FormLayoutViewController {
     @IBOutlet weak var loginScrollView: UIScrollView!
@@ -16,9 +18,16 @@ class LoginViewController: FormLayoutViewController {
     @IBOutlet weak var signInButton: GradientButtonView!
     @IBOutlet weak var signUpButton: UIButton!
     
+    fileprivate let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView = loginScrollView
         passwordTextField.textField.isSecureTextEntry = true
+        
+        signInButton.rx.controlEvent(.touchUpInside).subscribe(onNext: { [weak self] (_) in
+            guard let `self` = self else {return}
+            self.performSegue(withIdentifier: "gotoRegistration", sender: nil)
+        }).disposed(by: disposeBag)
     }
 }

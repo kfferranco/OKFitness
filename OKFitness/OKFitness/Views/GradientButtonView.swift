@@ -11,13 +11,13 @@ import UIKit
 @IBDesignable
 
 public class GradientButtonView: UIButton {
-    @IBInspectable var startColor: UIColor = .blue {
+    @IBInspectable var startColor: UIColor? {
         didSet {
             setupGradient()
         }
     }
     
-    @IBInspectable var endColor: UIColor = .green {
+    @IBInspectable var endColor: UIColor? {
         didSet {
             setupGradient()
         }
@@ -45,6 +45,9 @@ public class GradientButtonView: UIButton {
     
     public func setupGradient() {
         let gradientLayer = layer as! CAGradientLayer
+        let defaultColor = backgroundColor ?? UIColor.white
+        let startColor = self.startColor ?? defaultColor
+        let endColor = self.endColor ?? defaultColor
         gradientLayer.colors = [startColor.cgColor, endColor.cgColor]
         gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
         gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)

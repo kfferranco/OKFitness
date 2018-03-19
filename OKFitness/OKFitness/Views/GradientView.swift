@@ -13,45 +13,41 @@ import UIKit
 public class GradientView: UIView {
     @IBInspectable public var startColor: UIColor? {
         didSet {
-            configureView()
+            setupGradient()
         }
     }
     @IBInspectable public var endColor: UIColor? {
         didSet {
-            configureView()
+            setupGradient()
         }
     }
     
-//    override public class func layerClass() -> AnyClass {
-//        return CAGradientLayer.self
-//    }
-//
-//    public override init() {
-//        super.init()
-//    }
-    
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        configureView()
+        setupGradient()
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        configureView()
+        setupGradient()
     }
     
     public override func tintColorDidChange() {
         super.tintColorDidChange()
-        configureView()
+        setupGradient()
     }
     
-    func configureView() {
-//        let layer = self.layer as CAGradientLayer
-//        layer.startLocation = CGPoint(x: 0.0, y:0.5)
-//        layer.endLocation = CGPoint(x:1.0, y:0.5)
-//        var color1 = startColor ?? self.tintColor as UIColor
-//        var color2 = endColor ?? UIColor.blackColor() as UIColor
-//        let colors: Array <AnyObject> = [ color1.CGColor, color2.CGColor ]
-//        layer.colors = colors
+    override public class var layerClass: AnyClass {
+        return CAGradientLayer.self
+    }
+    
+    public func setupGradient() {
+        let gradientLayer = layer as! CAGradientLayer
+        let defaultColor = backgroundColor ?? UIColor.white
+        let startColor = self.startColor ?? defaultColor
+        let endColor = self.endColor ?? defaultColor
+        gradientLayer.colors = [startColor.cgColor, endColor.cgColor]
+        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
+        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
     }
 }
