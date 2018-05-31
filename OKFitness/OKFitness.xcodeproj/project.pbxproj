@@ -29,6 +29,7 @@
 		C3517F6D205FEC5F00D65D6C /* GoalSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3517F6C205FEC5F00D65D6C /* GoalSelectionViewModel.swift */; };
 		C3517F70205FEC9500D65D6C /* FitnessGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3517F6F205FEC9500D65D6C /* FitnessGoal.swift */; };
 		C3517F77205FEDD800D65D6C /* GradientNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3517F76205FEDD800D65D6C /* GradientNavigationController.swift */; };
+		C3517F79206007B000D65D6C /* PARQTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3517F78206007B000D65D6C /* PARQTableViewCell.swift */; };
 		C38449E62029F540006E7DEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38449E52029F540006E7DEC /* AppDelegate.swift */; };
 		C38449EB2029F540006E7DEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38449E92029F540006E7DEC /* Main.storyboard */; };
 		C38449ED2029F540006E7DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38449EC2029F540006E7DEC /* Assets.xcassets */; };
@@ -78,6 +79,7 @@
 		C3517F6C205FEC5F00D65D6C /* GoalSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalSelectionViewModel.swift; sourceTree = "<group>"; };
 		C3517F6F205FEC9500D65D6C /* FitnessGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessGoal.swift; sourceTree = "<group>"; };
 		C3517F76205FEDD800D65D6C /* GradientNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientNavigationController.swift; sourceTree = "<group>"; };
+		C3517F78206007B000D65D6C /* PARQTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PARQTableViewCell.swift; sourceTree = "<group>"; };
 		C38449E22029F540006E7DEC /* OKFitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OKFitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38449E52029F540006E7DEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C38449EA2029F540006E7DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				C3517F6A205FD5DC00D65D6C /* FitnessGoalCollectionViewCell.swift */,
+				C3517F78206007B000D65D6C /* PARQTableViewCell.swift */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -548,6 +551,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C33715202056C4D700DFB1B5 /* WaiverViewController.swift in Sources */,
+				C3517F79206007B000D65D6C /* PARQTableViewCell.swift in Sources */,
 				C337151C205696DB00DFB1B5 /* GoalSelectionViewController.swift in Sources */,
 				C38449E62029F540006E7DEC /* AppDelegate.swift in Sources */,
 				C3517F6D205FEC5F00D65D6C /* GoalSelectionViewModel.swift in Sources */,
