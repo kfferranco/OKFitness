@@ -1,0 +1,20 @@
+input_dir: OKFitness
+output_dir: OKFitness/Generated/
+strings:
+    paths:
+        - Resources/Strings/Localizable.strings
+    templateName: structured-swift4
+    output: L10n.swift
+xcassets:
+    paths:
+        - Resources/Images/Assets.xcassets
+    templateName: swift4
+    output: Assets.swift
+storyboards:
+    paths:
+        - UI/Storyboards/Base.lproj/Main.storyboard
+        - UI/Storyboards/Base.lproj/LaunchScreen.storyboard
+        - UI/Storyboards/Base.lproj/Home.storyboard
+        - UI/Storyboards/Base.lproj/Login.storyboard
+    templateName: swift4
+    output: Storyboards.swift
