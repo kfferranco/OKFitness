@@ -36,6 +36,12 @@
 		C38449F02029F540006E7DEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38449EE2029F540006E7DEC /* LaunchScreen.storyboard */; };
 		C38449FB2029F540006E7DEC /* OKFitnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38449FA2029F540006E7DEC /* OKFitnessTests.swift */; };
 		C3844A062029F540006E7DEC /* OKFitnessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3844A052029F540006E7DEC /* OKFitnessUITests.swift */; };
+		E19A5FAD2127D0400086C6DD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19A5FAC2127D0400086C6DD /* Coordinator.swift */; };
+		E19A5FB02127D0AE0086C6DD /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19A5FAF2127D0AE0086C6DD /* CoordinatorProtocol.swift */; };
+		E19A5FB22127D0DA0086C6DD /* PresentableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19A5FB12127D0DA0086C6DD /* PresentableProtocol.swift */; };
+		E19A5FB42127D0F20086C6DD /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19A5FB32127D0F20086C6DD /* RouterProtocol.swift */; };
+		E19A5FB62127D1290086C6DD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19A5FB52127D1290086C6DD /* Router.swift */; };
+		E19A5FB82127D1BB0086C6DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19A5FB72127D1BB0086C6DD /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +99,12 @@
 		C3844A052029F540006E7DEC /* OKFitnessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKFitnessUITests.swift; sourceTree = "<group>"; };
 		C3844A072029F540006E7DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCD92A0A406C34C015440FDA /* Pods-App-OKFitness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-OKFitness.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App-OKFitness/Pods-App-OKFitness.debug.xcconfig"; sourceTree = "<group>"; };
+		E19A5FAC2127D0400086C6DD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E19A5FAF2127D0AE0086C6DD /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		E19A5FB12127D0DA0086C6DD /* PresentableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentableProtocol.swift; sourceTree = "<group>"; };
+		E19A5FB32127D0F20086C6DD /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		E19A5FB52127D1290086C6DD /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		E19A5FB72127D1BB0086C6DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +241,7 @@
 				C3844A152029F575006E7DEC /* ViewModels */,
 				C3844A142029F570006E7DEC /* Views */,
 				C3844A132029F56A006E7DEC /* ViewControllers */,
+				E19A5FAB2127D01C0086C6DD /* Coordinators */,
 			);
 			path = OKFitness;
 			sourceTree = "<group>";
@@ -292,6 +305,7 @@
 			children = (
 				C38449F12029F540006E7DEC /* Info.plist */,
 				C38449E52029F540006E7DEC /* AppDelegate.swift */,
+				E19A5FB72127D1BB0086C6DD /* ViewController.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -324,6 +338,26 @@
 			path = Xibs;
 			sourceTree = "<group>";
 		};
+		E19A5FAB2127D01C0086C6DD /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				E19A5FAE2127D0780086C6DD /* Protocols */,
+				E19A5FAC2127D0400086C6DD /* Coordinator.swift */,
+				E19A5FB52127D1290086C6DD /* Router.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		E19A5FAE2127D0780086C6DD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E19A5FAF2127D0AE0086C6DD /* CoordinatorProtocol.swift */,
+				E19A5FB12127D0DA0086C6DD /* PresentableProtocol.swift */,
+				E19A5FB32127D0F20086C6DD /* RouterProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -336,7 +370,6 @@
 				C38449DF2029F540006E7DEC /* Frameworks */,
 				C38449E02029F540006E7DEC /* Resources */,
 				97CD987EBEA00BD579AB6F46 /* [CP] Embed Pods Frameworks */,
-				4505EC444F7D736FEEEE3321 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -478,21 +511,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4505EC444F7D736FEEEE3321 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App-OKFitness/Pods-App-OKFitness-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		97CD987EBEA00BD579AB6F46 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -552,10 +570,13 @@
 			files = (
 				C33715202056C4D700DFB1B5 /* WaiverViewController.swift in Sources */,
 				C3517F79206007B000D65D6C /* PARQTableViewCell.swift in Sources */,
+				E19A5FB62127D1290086C6DD /* Router.swift in Sources */,
 				C337151C205696DB00DFB1B5 /* GoalSelectionViewController.swift in Sources */,
 				C38449E62029F540006E7DEC /* AppDelegate.swift in Sources */,
 				C3517F6D205FEC5F00D65D6C /* GoalSelectionViewModel.swift in Sources */,
 				C33715222056C7F200DFB1B5 /* ContractViewController.swift in Sources */,
+				E19A5FB02127D0AE0086C6DD /* CoordinatorProtocol.swift in Sources */,
+				E19A5FB82127D1BB0086C6DD /* ViewController.swift in Sources */,
 				C3517F6B205FD5DC00D65D6C /* FitnessGoalCollectionViewCell.swift in Sources */,
 				C334B2612043DF8D00E88D2D /* LoginNavigationController.swift in Sources */,
 				C346A6222042F33C008625C8 /* TextFieldView.swift in Sources */,
@@ -567,9 +588,12 @@
 				C33715242056C81C00DFB1B5 /* PARQViewController.swift in Sources */,
 				C346A6242042F39B008625C8 /* TextField.swift in Sources */,
 				C346A6282042F571008625C8 /* LoginViewController.swift in Sources */,
+				E19A5FB42127D0F20086C6DD /* RouterProtocol.swift in Sources */,
 				C3517F77205FEDD800D65D6C /* GradientNavigationController.swift in Sources */,
 				C346A6202042F280008625C8 /* Color+Extensions.swift in Sources */,
 				C346A62C20430A5F008625C8 /* GradientButtonView.swift in Sources */,
+				E19A5FB22127D0DA0086C6DD /* PresentableProtocol.swift in Sources */,
+				E19A5FAD2127D0400086C6DD /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -61,11 +61,31 @@ DEPENDENCIES:
   - RxSwift (= 4.1.2)
   - SwiftyJSON
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Action
+    - Alamofire
+    - Bolts
+    - DrawerController
+    - FacebookCore
+    - FacebookLogin
+    - FacebookShare
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FBSDKShareKit
+    - Kingfisher
+    - Locksmith
+    - Moya
+    - Result
+    - RxCocoa
+    - RxSwift
+    - SwiftyJSON
+
 SPEC CHECKSUMS:
   Action: d60087ebce41b969d1afdad01e2fa1372a82f26e
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
-  DrawerController: bad219f1535b1ff71f06ceb0f9d4339751b60af4
+  DrawerController: eb1168e9f7185cc49f654ae8486917f0acb3dc88
   FacebookCore: 3ffa190a3f1f96cec0e44d3fc221bc322c595ffa
   FacebookLogin: 0af839ea858faef99550d16596b87b4a8e8906e6
   FacebookShare: 0469964297ebd75f052be2c5083389a4208e82b7
@@ -82,4 +102,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 98c2723ea392e8d3477b50a1297e594cf8936c72
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
