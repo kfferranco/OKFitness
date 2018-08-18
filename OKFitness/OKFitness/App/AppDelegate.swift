@@ -13,9 +13,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    lazy var appRouter: RouterProtocol = {
+        let navigationController = UINavigationController()
+        navigationController.isNavigationBarHidden = true
+        return Router(navigationController: navigationController)
+    }()
+    lazy var appCoordinator: CoordinatorProtocol = AppCoordinator(router: appRouter)
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //Start via Coordinator
+        window?.rootViewController = appCoordinator.toPresentable()
+        window?.makeKeyAndVisible()
+        appCoordinator.start()
+        
         return true
     }
 

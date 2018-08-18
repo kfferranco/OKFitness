@@ -67,11 +67,13 @@ internal enum StoryboardScene {
     internal static let storyboardName = "Login"
 
     internal static let initialScene = InitialSceneType<OKFitness.LoginNavigationController>(storyboard: Login.self)
+
+    internal static let loginViewController = SceneType<OKFitness.LoginViewController>(storyboard: Login.self, identifier: "LoginViewController")
   }
   internal enum Main: StoryboardType {
     internal static let storyboardName = "Main"
 
-    internal static let initialScene = InitialSceneType<OKFitness.ViewController>(storyboard: Main.self)
+    internal static let initialScene = InitialSceneType<OKFitness.InitialViewController>(storyboard: Main.self)
   }
 }
 

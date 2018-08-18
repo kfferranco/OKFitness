@@ -46,6 +46,9 @@
 		E19A5FC421282FA90086C6DD /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19A5FC121282FA80086C6DD /* Assets.swift */; };
 		E19A5FC521282FA90086C6DD /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19A5FC221282FA80086C6DD /* Storyboards.swift */; };
 		E19A5FC621282FA90086C6DD /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19A5FC321282FA90086C6DD /* L10n.swift */; };
+		E19A5FC821283D390086C6DD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19A5FC721283D390086C6DD /* AppCoordinator.swift */; };
+		E19A5FCA21283E330086C6DD /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19A5FC921283E330086C6DD /* InitialViewController.swift */; };
+		E19A5FCD212846300086C6DD /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19A5FCC212846300086C6DD /* LoginCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +116,9 @@
 		E19A5FC121282FA80086C6DD /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		E19A5FC221282FA80086C6DD /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		E19A5FC321282FA90086C6DD /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		E19A5FC721283D390086C6DD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E19A5FC921283E330086C6DD /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		E19A5FCC212846300086C6DD /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,8 +186,10 @@
 		C3517F72205FED9100D65D6C /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				E19A5FB72127D1BB0086C6DD /* ViewController.swift */,
 				C334B25C2043DCB200E88D2D /* FormLayoutViewController.swift */,
 				C3517F76205FEDD800D65D6C /* GradientNavigationController.swift */,
+				E19A5FC921283E330086C6DD /* InitialViewController.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -315,7 +323,6 @@
 			children = (
 				C38449F12029F540006E7DEC /* Info.plist */,
 				C38449E52029F540006E7DEC /* AppDelegate.swift */,
-				E19A5FB72127D1BB0086C6DD /* ViewController.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -351,9 +358,11 @@
 		E19A5FAB2127D01C0086C6DD /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				E19A5FCB2128461C0086C6DD /* Login */,
 				E19A5FAE2127D0780086C6DD /* Protocols */,
 				E19A5FAC2127D0400086C6DD /* Coordinator.swift */,
 				E19A5FB52127D1290086C6DD /* Router.swift */,
+				E19A5FC721283D390086C6DD /* AppCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -392,6 +401,14 @@
 				E19A5FC221282FA80086C6DD /* Storyboards.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		E19A5FCB2128461C0086C6DD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E19A5FCC212846300086C6DD /* LoginCoordinator.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -459,7 +476,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = okfitness;
 				TargetAttributes = {
 					C38449E12029F540006E7DEC = {
@@ -608,6 +625,7 @@
 				C33715202056C4D700DFB1B5 /* WaiverViewController.swift in Sources */,
 				C3517F79206007B000D65D6C /* PARQTableViewCell.swift in Sources */,
 				E19A5FB62127D1290086C6DD /* Router.swift in Sources */,
+				E19A5FCA21283E330086C6DD /* InitialViewController.swift in Sources */,
 				C337151C205696DB00DFB1B5 /* GoalSelectionViewController.swift in Sources */,
 				C38449E62029F540006E7DEC /* AppDelegate.swift in Sources */,
 				C3517F6D205FEC5F00D65D6C /* GoalSelectionViewModel.swift in Sources */,
@@ -617,6 +635,8 @@
 				C3517F6B205FD5DC00D65D6C /* FitnessGoalCollectionViewCell.swift in Sources */,
 				C334B2612043DF8D00E88D2D /* LoginNavigationController.swift in Sources */,
 				C346A6222042F33C008625C8 /* TextFieldView.swift in Sources */,
+				E19A5FC821283D390086C6DD /* AppCoordinator.swift in Sources */,
+				E19A5FCD212846300086C6DD /* LoginCoordinator.swift in Sources */,
 				C337151A205696CA00DFB1B5 /* RegistrationViewController.swift in Sources */,
 				C334B25D2043DCB200E88D2D /* FormLayoutViewController.swift in Sources */,
 				C346A62A2043062F008625C8 /* GradientView.swift in Sources */,
@@ -718,6 +738,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -725,6 +746,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -775,6 +797,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -782,6 +805,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
