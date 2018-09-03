@@ -6,3 +6,8 @@
   Copyright © 2018 okfitness. All rights reserved.
 */
 "app.name" = "OKFitness";
+
+"menu.payment" = "Payment";
+"menu.history" = "History";
+"menu.appointment" = "Appointment";
+"menu.help" = "Help";

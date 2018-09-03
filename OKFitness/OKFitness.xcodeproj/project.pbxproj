@@ -35,6 +35,12 @@
 		C38449F02029F540006E7DEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38449EE2029F540006E7DEC /* LaunchScreen.storyboard */; };
 		C38449FB2029F540006E7DEC /* OKFitnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38449FA2029F540006E7DEC /* OKFitnessTests.swift */; };
 		C3844A062029F540006E7DEC /* OKFitnessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3844A052029F540006E7DEC /* OKFitnessUITests.swift */; };
+		E1172A3D213D4BB4006313B4 /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1172A3C213D4BB4006313B4 /* DrawerViewController.swift */; };
+		E1172A3F213D4CE5006313B4 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1172A3E213D4CE5006313B4 /* ScheduleViewController.swift */; };
+		E1172A42213D4D87006313B4 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1172A41213D4D87006313B4 /* HomeCoordinator.swift */; };
+		E1172A45213D5D8A006313B4 /* StoryboardSegueHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1172A44213D5D8A006313B4 /* StoryboardSegueHandler.swift */; };
+		E1172A4A213D6325006313B4 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1172A49213D6325006313B4 /* MenuTableViewCell.swift */; };
+		E1172A4E213D6610006313B4 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1172A4D213D6610006313B4 /* MenuItem.swift */; };
 		E19A5FAD2127D0400086C6DD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19A5FAC2127D0400086C6DD /* Coordinator.swift */; };
 		E19A5FB02127D0AE0086C6DD /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19A5FAF2127D0AE0086C6DD /* CoordinatorProtocol.swift */; };
 		E19A5FB22127D0DA0086C6DD /* PresentableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19A5FB12127D0DA0086C6DD /* PresentableProtocol.swift */; };
@@ -105,6 +111,12 @@
 		C3844A052029F540006E7DEC /* OKFitnessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKFitnessUITests.swift; sourceTree = "<group>"; };
 		C3844A072029F540006E7DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCD92A0A406C34C015440FDA /* Pods-App-OKFitness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-OKFitness.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App-OKFitness/Pods-App-OKFitness.debug.xcconfig"; sourceTree = "<group>"; };
+		E1172A3C213D4BB4006313B4 /* DrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
+		E1172A3E213D4CE5006313B4 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		E1172A41213D4D87006313B4 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		E1172A44213D5D8A006313B4 /* StoryboardSegueHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardSegueHandler.swift; sourceTree = "<group>"; };
+		E1172A49213D6325006313B4 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		E1172A4D213D6610006313B4 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		E19A5FAC2127D0400086C6DD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		E19A5FAF2127D0AE0086C6DD /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		E19A5FB12127D0DA0086C6DD /* PresentableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentableProtocol.swift; sourceTree = "<group>"; };
@@ -251,14 +263,16 @@
 			isa = PBXGroup;
 			children = (
 				C3844A172029F57F006E7DEC /* App */,
+				E19A5FAB2127D01C0086C6DD /* Coordinators */,
+				C3844A132029F56A006E7DEC /* ViewControllers */,
+				C3844A142029F570006E7DEC /* Views */,
+				C3844A152029F575006E7DEC /* ViewModels */,
+				C3517F6E205FEC7A00D65D6C /* Models */,
+				C3844A182029F594006E7DEC /* UI */,
+				E1172A4B213D65F2006313B4 /* Constants */,
+				E1172A43213D5D76006313B4 /* Helper */,
 				C3844A162029F57A006E7DEC /* Resources */,
 				E19A5FC021282F740086C6DD /* Generated */,
-				C3844A182029F594006E7DEC /* UI */,
-				C3517F6E205FEC7A00D65D6C /* Models */,
-				C3844A152029F575006E7DEC /* ViewModels */,
-				C3844A142029F570006E7DEC /* Views */,
-				C3844A132029F56A006E7DEC /* ViewControllers */,
-				E19A5FAB2127D01C0086C6DD /* Coordinators */,
 			);
 			path = OKFitness;
 			sourceTree = "<group>";
@@ -284,6 +298,7 @@
 		C3844A132029F56A006E7DEC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E1172A40213D4D25006313B4 /* Home */,
 				C3517F73205FED9600D65D6C /* Registration */,
 				C3517F72205FED9100D65D6C /* Commons */,
 			);
@@ -293,6 +308,7 @@
 		C3844A142029F570006E7DEC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E1172A48213D630D006313B4 /* Home */,
 				C3517F74205FEDA900D65D6C /* Registration */,
 				C3517F71205FED8100D65D6C /* Commons */,
 			);
@@ -355,9 +371,59 @@
 			path = Xibs;
 			sourceTree = "<group>";
 		};
+		E1172A3B213D4B85006313B4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E1172A41213D4D87006313B4 /* HomeCoordinator.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E1172A40213D4D25006313B4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E1172A3C213D4BB4006313B4 /* DrawerViewController.swift */,
+				E1172A3E213D4CE5006313B4 /* ScheduleViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E1172A43213D5D76006313B4 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E1172A44213D5D8A006313B4 /* StoryboardSegueHandler.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		E1172A48213D630D006313B4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E1172A49213D6325006313B4 /* MenuTableViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E1172A4B213D65F2006313B4 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E1172A4C213D6602006313B4 /* Types */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		E1172A4C213D6602006313B4 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				E1172A4D213D6610006313B4 /* MenuItem.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
 		E19A5FAB2127D01C0086C6DD /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				E1172A3B213D4B85006313B4 /* Home */,
 				E19A5FCB2128461C0086C6DD /* Login */,
 				E19A5FAE2127D0780086C6DD /* Protocols */,
 				E19A5FAC2127D0400086C6DD /* Coordinator.swift */,
@@ -575,7 +641,6 @@
 				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/DrawerController/DrawerController.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
@@ -588,6 +653,7 @@
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -595,7 +661,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DrawerController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
@@ -608,6 +673,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -627,19 +693,23 @@
 				E19A5FB62127D1290086C6DD /* Router.swift in Sources */,
 				E19A5FCA21283E330086C6DD /* InitialViewController.swift in Sources */,
 				C337151C205696DB00DFB1B5 /* GoalSelectionViewController.swift in Sources */,
+				E1172A3D213D4BB4006313B4 /* DrawerViewController.swift in Sources */,
 				C38449E62029F540006E7DEC /* AppDelegate.swift in Sources */,
 				C3517F6D205FEC5F00D65D6C /* GoalSelectionViewModel.swift in Sources */,
 				C33715222056C7F200DFB1B5 /* ContractViewController.swift in Sources */,
 				E19A5FB02127D0AE0086C6DD /* CoordinatorProtocol.swift in Sources */,
 				E19A5FB82127D1BB0086C6DD /* ViewController.swift in Sources */,
 				C3517F6B205FD5DC00D65D6C /* FitnessGoalCollectionViewCell.swift in Sources */,
+				E1172A42213D4D87006313B4 /* HomeCoordinator.swift in Sources */,
 				C334B2612043DF8D00E88D2D /* LoginNavigationController.swift in Sources */,
 				C346A6222042F33C008625C8 /* TextFieldView.swift in Sources */,
 				E19A5FC821283D390086C6DD /* AppCoordinator.swift in Sources */,
+				E1172A45213D5D8A006313B4 /* StoryboardSegueHandler.swift in Sources */,
 				E19A5FCD212846300086C6DD /* LoginCoordinator.swift in Sources */,
 				C337151A205696CA00DFB1B5 /* RegistrationViewController.swift in Sources */,
 				C334B25D2043DCB200E88D2D /* FormLayoutViewController.swift in Sources */,
 				C346A62A2043062F008625C8 /* GradientView.swift in Sources */,
+				E1172A3F213D4CE5006313B4 /* ScheduleViewController.swift in Sources */,
 				E19A5FC621282FA90086C6DD /* L10n.swift in Sources */,
 				C3517F70205FEC9500D65D6C /* FitnessGoal.swift in Sources */,
 				C334B25F2043DD1400E88D2D /* UIViewController+Extensions.swift in Sources */,
@@ -649,11 +719,13 @@
 				E19A5FC521282FA90086C6DD /* Storyboards.swift in Sources */,
 				E19A5FB42127D0F20086C6DD /* RouterProtocol.swift in Sources */,
 				C3517F77205FEDD800D65D6C /* GradientNavigationController.swift in Sources */,
+				E1172A4A213D6325006313B4 /* MenuTableViewCell.swift in Sources */,
 				C346A6202042F280008625C8 /* Color+Extensions.swift in Sources */,
 				C346A62C20430A5F008625C8 /* GradientButtonView.swift in Sources */,
 				E19A5FB22127D0DA0086C6DD /* PresentableProtocol.swift in Sources */,
 				E19A5FAD2127D0400086C6DD /* Coordinator.swift in Sources */,
 				E19A5FC421282FA90086C6DD /* Assets.swift in Sources */,
+				E1172A4E213D6610006313B4 /* MenuItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

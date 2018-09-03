@@ -1,4 +1,4 @@
-platform :ios, '8.0'
+platform :ios, '9.0'
 source 'https://github.com/CocoaPods/Specs.git'
 # ignore all warnings from all pods
 inhibit_all_warnings!
@@ -9,12 +9,12 @@ def public_pods
   pod 'Moya/RxSwift', '11.0.0'
   pod 'SwiftyJSON'
   pod 'Action', '3.5.0'
-  pod 'DrawerController', '~> 4.0'
   pod 'Kingfisher'
   pod 'FacebookCore'
   pod 'FacebookLogin'
   pod 'FacebookShare'
   pod 'Locksmith'
+  pod 'SlideMenuControllerSwift'
 end
 
 

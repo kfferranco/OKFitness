@@ -10,6 +10,11 @@ import UIKit
 import RxCocoa
 import RxSwift
 
+protocol LoginViewControllerDelegate {
+    func didAuthenticate(_ viewController: LoginViewController)
+    func didTapSignUp(_ viewController: LoginViewController)
+}
+
 class LoginViewController: FormLayoutViewController {
     @IBOutlet weak var loginScrollView: UIScrollView!
     @IBOutlet weak var userNameTextField: TextFieldView!
@@ -18,6 +23,8 @@ class LoginViewController: FormLayoutViewController {
     @IBOutlet weak var signInButton: GradientButtonView!
     @IBOutlet weak var signUpButton: UIButton!
     
+    var delegate: LoginViewControllerDelegate?
+    
     fileprivate let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -25,9 +32,14 @@ class LoginViewController: FormLayoutViewController {
         scrollView = loginScrollView
         passwordTextField.textField.isSecureTextEntry = true
         
-        signInButton.rx.controlEvent(.touchUpInside).subscribe(onNext: { [weak self] (_) in
-            guard let `self` = self else {return}
-            self.performSegue(withIdentifier: "gotoRegistration", sender: nil)
-        }).disposed(by: disposeBag)
+//        signInButton.rx.controlEvent(.touchUpInside).subscribe(onNext: { [weak self] (_) in
+//            guard let `self` = self else {return}
+//            self.performSegue(withIdentifier: "gotoRegistration", sender: nil)
+//        }).disposed(by: disposeBag)
     }
+    
+    @IBAction func didTapSignIn(_ sender: Any) {
+        delegate?.didAuthenticate(self)
+    }
+    
 }

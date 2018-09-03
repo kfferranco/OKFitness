@@ -12,6 +12,17 @@ internal enum L10n {
     /// OKFitness
     internal static let name = L10n.tr("Localizable", "app.name")
   }
+
+  internal enum Menu {
+    /// Appointment
+    internal static let appointment = L10n.tr("Localizable", "menu.appointment")
+    /// Help
+    internal static let help = L10n.tr("Localizable", "menu.help")
+    /// History
+    internal static let history = L10n.tr("Localizable", "menu.history")
+    /// Payment
+    internal static let payment = L10n.tr("Localizable", "menu.payment")
+  }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length nesting type_body_length type_name
 

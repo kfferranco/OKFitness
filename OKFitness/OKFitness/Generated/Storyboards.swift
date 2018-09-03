@@ -3,7 +3,6 @@
 // swiftlint:disable sorted_imports
 import Foundation
 import UIKit
-import DrawerController
 import OKFitness
 
 // swiftlint:disable superfluous_disable_command
@@ -57,6 +56,10 @@ internal extension UIViewController {
 internal enum StoryboardScene {
   internal enum Home: StoryboardType {
     internal static let storyboardName = "Home"
+
+    internal static let drawerViewController = SceneType<OKFitness.DrawerViewController>(storyboard: Home.self, identifier: "DrawerViewController")
+
+    internal static let scheduleViewController = SceneType<OKFitness.ScheduleViewController>(storyboard: Home.self, identifier: "ScheduleViewController")
   }
   internal enum LaunchScreen: StoryboardType {
     internal static let storyboardName = "LaunchScreen"
@@ -78,10 +81,6 @@ internal enum StoryboardScene {
 }
 
 internal enum StoryboardSegue {
-  internal enum Home: String, SegueType {
-    case center
-    case `left`
-  }
   internal enum Login: String, SegueType {
     case gotoRegistration
   }
